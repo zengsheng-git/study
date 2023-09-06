@@ -105,8 +105,9 @@ group:
 ## 自适应
 
 1. % + vh / vw 适配;
-2. `autofit.js` 并不是理想中的自适应，而是会缩小高度;
-3. `import { FullScreenContainer } from '@jiaminghi/data-view-react'` 全屏组件 好在哪？
+2. ~~`autofit.js` 并不是理想中的自适应，而是会缩小高度,但是 echarts 文字不需要再单独设置;~~
+3. ~~`import { FullScreenContainer } from '@jiaminghi/data-view-react'` 全屏组件 好在哪？~~
+4. **尝试使用 `autofit.js`**
 
 ---
 
@@ -114,6 +115,8 @@ group:
 
 - web 端 `npm run start` `npm run build`
 - 桌面端 `yarn tauri dev` `yarn tauri build`
+  - (可执行文件) \src-tauri\target\release\tauri-umi-antd.exe
+  - (安装包) \src-tauri\target\release\bundle\msi\tauri-umi-antd_0.1.0_x64_en-US.msi
 
 ---
 
@@ -130,5 +133,23 @@ group:
 - ts 的类型补全
 - ~~数据请求封装数据备份~~
 - 全部图形确定了就一键换主题
+- echarts 配置记录
+  - echartFontSize 文字大小动态计算函数
+  - bar 的最小高度
+  - 没有设置 color 文件模糊
+  - 是否是反向坐标轴。 可作为正序和倒序
+  - axisLabel 旋转换行
+- 使用 ahooks 中的 useInterval
+- 开发这个应该使用 tauri 命令，方便熟悉
+- tauri 的配置记录
+  ```JavaScript
+    "build": {
+      "beforeBuildCommand": "yarn run build",
+      "beforeDevCommand": "yarn run start",
+      "devPath": "http://localhost:5000",
+      "distDir": "../dist",
+      "withGlobalTauri": true
+    },
+  ```
 
 ---
