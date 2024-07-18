@@ -1,9 +1,9 @@
 <!--
  * @Author: sheng.zeng 1218128305@qq.com
- * @Date: 2024-04-05 16:31:22
+ * @Date: 2024-04-11 10:24:25
  * @LastEditors: sheng.zeng 1218128305@qq.com
- * @LastEditTime: 2024-04-08 15:34:15
- * @FilePath: \LMM-Frontend\docs\project_plugin.md
+ * @LastEditTime: 2024-07-18 18:42:34
+ * @FilePath: \almfirst-psa-frontend\docs\project_plugin.md
 -->
 
 ## 命令式上传文件
@@ -121,3 +121,69 @@ npx --no-install lint-staged
 ```json
 "dev": "concurrently \"npm run vite\" \"npm run dev:docs\"",
 ```
+
+## Luckysheet的使用
+
+-   [文档][Luckysheet文档]
+-   在html中引入
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/luckysheet/dist/plugins/css/pluginsCss.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/luckysheet/dist/plugins/plugins.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/luckysheet/dist/css/luckysheet.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/luckysheet/dist/assets/iconfont/iconfont.css" />
+<script src="https://cdn.jsdelivr.net/npm/luckysheet/dist/plugins/js/plugin.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/luckysheet/dist/luckysheet.umd.js"></script>
+```
+
+-   使用
+
+```javascript
+useEffect(() => {
+    const luckysheet = window.luckysheet;
+    luckysheet.create({
+        container: "luckysheet",
+        plugins: ["chart"],
+        title: "filename", // 设定表格名称
+        data: [], // 设定表格数据
+    });
+}, []);
+```
+
+## 集成 univerjs
+
+-   安装依赖
+
+```json
+{
+    "@univerjs/core": "^0.1.3",
+    "@univerjs/design": "^0.1.3",
+    "@univerjs/docs": "^0.1.3",
+    "@univerjs/docs-ui": "^0.1.3",
+    "@univerjs/engine-formula": "^0.1.3",
+    "@univerjs/engine-numfmt": "^0.1.3",
+    "@univerjs/engine-render": "^0.1.3",
+    "@univerjs/facade": "^0.1.4",
+    "@univerjs/network": "^0.1.4",
+    "@univerjs/protocol": "^0.1.13",
+    "@univerjs/rpc": "^0.1.3",
+    "@univerjs/sheets": "^0.1.3",
+    "@univerjs/sheets-formula": "^0.1.3",
+    "@univerjs/sheets-numfmt": "^0.1.3",
+    "@univerjs/sheets-ui": "^0.1.3",
+    "@univerjs/ui": "^0.1.3",
+    "@univerjs/uniscript": "^0.1.3",
+
+    "@wendellhu/redi": "^0.13.0",
+    "monaco-editor": "^0.47.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+}
+```
+
+-   [参考项目][univerjs项目示例]
+
+---
+
+[Luckysheet文档]: https://mengshukeji.gitee.io/LuckysheetDocs/zh/guide/config.html#%E9%85%8D%E7%BD%AE%E9%A1%B9
+[univerjs项目示例]: https://univer.ai/playground/?title=Uniscript

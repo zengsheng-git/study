@@ -2,10 +2,11 @@
  * @Author: sheng.zeng 1218128305@qq.com
  * @Date: 2024-02-21 16:31:15
  * @LastEditors: sheng.zeng 1218128305@qq.com
- * @LastEditTime: 2024-04-05 16:48:45
+ * @LastEditTime: 2024-07-18 18:52:24
  * @FilePath: \LMM-Frontend\project.md
 -->
-
+## 项目路径
+D:\w\lmm\lmm-onliy-new\LMM-Frontend
 ## file 上传相同文件没反应， onchnage 不触发，解决办法
 
 ```html

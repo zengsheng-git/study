@@ -1,9 +1,16 @@
 
 # 项目路径
-D:\w\excel-vba\lmm.project.md
 
+D:\w\excel-vba
+D:\w\almfirst-lmm-vba
+D:\w\almfirst-psa-vba
 # 语法
 
+## 忽略logs文件夹下的所有文件
+- logs/*
+- 除去忽略error.log和debug.log
+!logs/error.log
+!logs/debug.log
 ## **多尝试变量类型**
 - Collection
 - Object
@@ -143,8 +150,53 @@ end Sub
                 On Error GoTo 0
 
 ```
+
+## 给数组添加字典元素 **Set arr_AL_Side(arr_AL_Side_num) = children(i)**
+``` vb
+                Public arr_AL_Side() As Dictionary
+                ReDim Preserve arr_AL_Side(1 To arr_AL_Side_num)   '设置数组元素个数
+                Set arr_AL_Side(arr_AL_Side_num) = children(i)
+                arr_AL_Side_num = arr_AL_Side_num + 1
+
+```
+
+``` vb
+        Dim arr() As Integer
+        ReDim arr(1 To 3) '初始化数组为3个元素
+        arr(1) = 1
+        arr(2) = 2
+        arr(3) = 3
+        ReDim Preserve arr(1 To 4) '添加一个新元素
+        arr(4) = 4
+```
+
+## 定义函数的参数是数组
+``` vb
+Function SumArray(arr() As Variant) As Double
+   
+End Function
+
+
+## 判断字符串是否包含某个指定字符串
+``` vb
+        Dim position As Integer
+        position = InStr("scenarios AL_Side", "scenarios")
+        '  "scenarios AL_Side" 字符串包含 "scenarios" 字符串
+        If position > 0 Then
+            
+        End If
+```
+
+## 从第3行开始，每隔7行对第3列（C列）的单元格加粗，直到第100行
+``` vb
+   For j = 3 To 100 Step 7 ' Step 7 确保每隔7行执行一次
+        ws.Cells(j, 3).Font.Bold = True ' 对第j行的第三列（C列）加粗
+    Next j
+```
+
 # Excel操作
 
+## InsertData 一次性插入数据
 ## GrowthAction.bas 
 - **创建按钮并绑定宏 PlaceButtonInA1**
 - **删除按钮 DeleteButton**
@@ -260,6 +312,113 @@ End Sub
     Debug.Print (rowCount & "JJJJJJJJJJJ")
 ```
 
+## 用excel VBA批量修改工作表保存后弹出“图片太大，超过部分将被截去”怎么办？
+
+``` vb
+' Workbook_BeforeSave 保存之前的事件
+Private Sub Workbook_BeforeSave(ByVal SaveAsUI As Boolean, Cancel As Boolean)
+   Sheets("Login").Cells(1, 1).Copy
+End Sub
+```
+
+## 新增工作表
+``` vb
+        Dim AL_Side As Object
+        Set AL_Side = ThisWorkbook.Sheets.add
+        ' 设置表名
+        AL_Side.name = scenariosName & " AL_Side scenarios"
+```
+
+## 阻止允许弹窗提示
+``` vb
+    Application.DisplayAlerts = False
+    ''''''
+    
+    '''''
+    Application.DisplayAlerts = True
+```
+`
+
+## 删除工作表，隐藏的工作表删除前必须显示
+``` vb
+      Sheets(sheetName).Visible = xlSheetVisible
+      Sheets(sheetName).Delete
+```
+
+## 隐藏和显示工作表
+``` vb
+  Sheets(sheetName).Visible = xlSheetVeryHidden
+  Sheets(sheetName).Visible = xlSheetVisible
+```
+
+## 输出时间到毫秒
+``` vb
+    Sub PrintTime()
+    Debug.Print Application.Text(Now(), "yyyy/mm/dd hh:mm:ss:") & Application.Text((Timer - Int(Timer)) * 1000, "000")
+    End Sub
+```
+
+## 循环所有的工作表
+``` vb
+     For Each Sheet In ThisWorkbook.Sheets
+               If InStr(Sheet.name, "verify") > 0 Then
+                    Sheet.Visible = xlSheetVisible
+                    Sheet.Delete
+               End If
+     Next Sheet
+```
+
+## 复制单元区域到到指定区域
+``` vb
+    Dim rowCount As Long
+    Dim sourceRange As Range
+    ' 复制 sourceSheet 工作表的b3后面所有的区域到 AL_Side 工作表的B3单元格
+    With Sheets("sourceSheet")
+        rowCount = .Cells(.Rows.Count, 2).End(xlUp).row
+        Set sourceRange = .Range("B3:R" & rowCount)
+        
+        Set destinationCe = Sheets("AL_Side").Range("B3")
+        ' 会复制单元格格式，也会复制按钮
+        'sourceRange.Copy Destination:=destinationCe
+        ' 只复制值，但不包括按钮
+        destinationCe.value = sourceRange.value
+        ' 单独复制按钮
+        .Range("F3:F" & rowCount).Copy Destination:=Sheets("AL_Side").Range("F3:F" & rowCount)
+    End With
+```
+## 修改单元格背景颜色
+``` vb
+ Sheets("H1").Range("A1:B3").Interior.Color = RGB(0, 0, 255) 
+ Sheets("H1").Range("A1").Interior.Color = RGB(0, 0, 255) 
+```
+## 动态改变下拉框的数据
+``` vb
+Sub SetDropdownList(col)
+    Dim ws As Worksheet
+    Dim dataList As Variant
+    
+    
+    Set ws = Sheets("Login")
+    
+    Dim oneDimArray() As Variant
+    ReDim oneDimArray(1 To 20)
+    Dim i As Integer
+    For i = 2 To 20
+        oneDimArray(i) = Sheets("API").Cells(i, col).Value
+    Next i
+    
+   
+    With ws.Range("B5").Validation
+        .Delete
+        .Add Type:=xlValidateList, AlertStyle:=xlValidAlertStop, Operator:= _
+        xlBetween, Formula1:=Join(oneDimArray, ",")
+        .IgnoreBlank = True
+        .InCellDropdown = True
+        .ShowInput = True
+        .ShowError = False
+    End With
+End Sub
+```
 # 窗体操作
 
 ## 窗体控件出现
