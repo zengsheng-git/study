@@ -11,6 +11,8 @@ group:
 ---
 
 ---
+## 项目路径
+D:\w\oem_hhsl\web\bigScreeUI\project.md
 
 ## 数据处理
 
@@ -105,9 +107,8 @@ group:
 ## 自适应
 
 1. % + vh / vw 适配;
-2. ~~`autofit.js` 并不是理想中的自适应，而是会缩小高度,但是 echarts 文字不需要再单独设置;~~
-3. ~~`import { FullScreenContainer } from '@jiaminghi/data-view-react'` 全屏组件 好在哪？~~
-4. **尝试使用 `autofit.js`**
+2. `autofit.js` 并不是理想中的自适应，而是会缩小高度;
+3. `import { FullScreenContainer } from '@jiaminghi/data-view-react'` 全屏组件 好在哪？
 
 ---
 
@@ -120,6 +121,88 @@ group:
 
 ---
 
+## 给 echarts 添加背景图 **适应性不好** ？？？？？？？？ 
+
+- /user/bigData2 设备统计图
+
+```json
+     graphic: [
+     // 背景图
+        {
+            type: 'image',
+            id: 'logo',
+            right: 'center',
+            top: '12%',
+            z: 0,
+            style: {
+                image: bg,
+                width: 180,
+                height:180
+            }
+        }
+    ],
+       series: [
+        {
+          type: 'pie',
+          selectedMode: 'single',
+          center:['50%', '30%'],
+          // 重点这里 radius ， 要设置数值 ，不要百分比 ；图形和背景才会相对不动
+          radius: [40, 65],
+          color: ['#86D560', '#AF89D6', '#59ADF3', '#FF999A', '#FFCC67'],
+          label: {
+            show: false,
+            formatter: (param: any) => {
+              return param.name + ' (' + param.percent + '%)';
+            },
+            textStyle: {
+              color: '#fff',
+              fontSize: echartFontSize(1.5),
+            },
+          },
+          labelLine: {
+            show: true,
+            length: 20,
+            length2: 10,
+          },
+          data: serData,
+        },
+      ],
+```
+## echarts 玫瑰图比例太小显示优化
+- https://blog.csdn.net/weixin_44101052/article/details/98964284
+
+
+## 折现图永远铺满
+只在数值轴中（type: 'value'）有效。
+是否是脱离 0 值比例。设置成 true 后坐标刻度不会强制包含零刻度。在双数值轴的散点图中比较有用。
+在设置 min 和 max 之后该配置项无效。
+``` javascript
+ yAxis: [
+        {
+          type: 'value',
+          scale: true,
+        },
+      ],
+
+```
+
+## 区分 2560*1440 和 1920*1080 分辨率
+``` css
+@media screen and (min-width: 1920px) and (max-width: 2559px) and (orientation: landscape),
+       screen and (min-height: 1080px) and (max-height: 1439px) and (orientation: portrait) {
+    /* 在这里添加针对1920x1080分辨率的样式 */
+    .box-wrip{
+      padding: 1vh;
+     }
+}
+ /* 这里注意些2300px */
+@media screen and (min-width: 2300px) {
+  /* 在这里添加针对2560x1440分辨率的样式 */
+  .box-wrip{
+    padding: 1.8vh;
+   }
+}
+```
 ## **待处理**
 
 - **eslint**

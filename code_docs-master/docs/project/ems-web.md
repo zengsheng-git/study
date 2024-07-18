@@ -12,8 +12,10 @@ group:
 
 # 项目记录
 -----
+## 项目路径
+D:\w\ems-web\ems\README.md
 
-## 架构升级如下:
+## 架构升级如下:   sdsd
 * react升级 15>17         使用hooks
 * react-router升级 2>4    hash路由改为/路由，因为特定的部署原因又改回hash路由；
 * webpack  升级 3>4       antd,icon/part多个按需加载，自定义主题，配置样式

@@ -1,5 +1,5 @@
 ---
-title: ems-cloud-notUI
+title: ems-cloud
 order: 3
 toc: content
 nav:
@@ -11,6 +11,8 @@ group:
 ---
 
 # 项目
+## 项目路径
+D:\w\ems-cloud-notUI\ems-cloud\project.md
 
 ### hover 加上 border 之后页面会抖动
 

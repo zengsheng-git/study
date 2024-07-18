@@ -3,11 +3,11 @@ title: study
 order: 11
 toc: content
 nav:
-  title: 项目记录
-  order: 6
-group: 
-  title: 项目记录
-  order: 1
+ title: 项目记录
+ order: 6
+group:
+ title: 项目记录
+ order: 1
 ---
 
 # 学习
@@ -33,7 +33,9 @@ group:
 - 搭建 goview 开源项目，帮助产品运营的快速实现大屏
 - ~~大屏一键换主题，并使用 hooks~~
 - 修改 console 样式
-- 命令式一键部署, ~~每次删除原有的文件，对比 Jenkins~~
+- [使用钉钉接收 gitlab 仓库的推送消息][10]
+- 使用命令一键提交代码到 git `npm run topush "fix: 提交信息" todeploy`
+- 命令式一键部署,自定义更新内容并自动推送到钉钉信息 ~~每次删除原有的文件，对比 Jenkins,~~
   1. `npm i fe-deploy-cli -g`
   2. `deploy -V`
   3. `deploy init` 生成 `deploy/deploy.config.js`
@@ -44,9 +46,14 @@ group:
 - [centos+jenkins+nginx+gitlab 前端自动化部署全记录-cicd][2]
 - [怎么制定前端协作规范?][4]
 - [就是一个基于 Axios 的完美的双 token 无感刷新][5]
+- [基于 Axios 二次封装请求库,带你重构面试亮点][7]
 - [css 新特性][6]
+- [前端最能打的本地存储方案][8]
+- [【前端工程化】使用 verdaccio 搭建公司 npm 私有库完整流程和踩坑记录][9]
 - 自定义约定路由配置
+- 代码规范 & 详细解释 husky、prettier、eslint、lint-staged 的作用和使用
 - ~~canvas 库 fabricJs,svg~~
+- ~~安装的 vscode 插件集合~~
 
 ---
 
@@ -63,6 +70,9 @@ group:
 
 - `ems-web`
 - `tauri-antdpro`
+- `ems-cloud`
+- `ballcat-ui-react-main`
+- `carbon-example/carbon-max`
 - `web_blog`
 - `vue3-egg-test`
 - `dumi-study`
@@ -74,7 +84,7 @@ group:
 - `monitor`
 - `vue-echarts-master`
 - `front-end-data-visualization-master`
-- `grafana-8.2.7`
+- ~~`grafana-8.2.7`~~
 - `low-code_big-screen`
 - `VRnavigation` ~~小程序二维码~~
 - `cf-seiko-mp` ~~小程序二维码~~
@@ -100,3 +110,7 @@ group:
 [4]: https://mp.weixin.qq.com/s?__biz=Mzk0NTI2NDgxNQ==&mid=2247485514&idx=1&sn=3d2237f19081576b4b36da7df29d47e6&chksm=c319498af46ec09c5c28eb60c914c1167e362e4f4fd5e55d4f64e7eb5b8c4fca5ff56a6952b2#rd '协作规范'
 [5]: https://mp.weixin.qq.com/s?__biz=Mzg5ODA5NTM1Mw==&mid=2247501075&idx=1&sn=f7a81ef54e9a75b52a310b2e54043712&chksm=c0654485f712cd932e9cd949d1e37bd44672ed17b7d70f68cad74d35913c6969e8797886bd44&mpshare=1&scene=24&srcid=082685uAmWg5qCboKPD1qfzh&sharer_sharetime=1693050648436&sharer_shareid=d0b6f47fad4bd7c2e575b22646a6eb1a#rd '基于Axios的完美的双token无感刷新'
 [6]: https://mp.weixin.qq.com/s?__biz=MzA5MjQwMzQyNw==&mid=2650767684&idx=1&sn=4c08a97c082e15e6ae59ed9e2a5d6df0&chksm=886682c8bf110bde0997454a59115e7454133aeda8ee2af023f27afa587ad2ee1bf8ecd8642d&mpshare=1&scene=24&srcid=0827lLuOtNKbcLqXK3mP2RVl&sharer_sharetime=1693151494348&sharer_shareid=d0b6f47fad4bd7c2e575b22646a6eb1a#rd 'css新特性'
+[7]: https://juejin.cn/post/7266308603938062391?searchId=20230920103646EAE35E6F327D2A799574#heading-9 '基于Axios二次封装请求库'
+[8]: https://mp.weixin.qq.com/s/FVpa-8izlbwha063ZeN3TA '前端最能打的本地存储方案'
+[9]: https://juejin.cn/post/7096701542408912933 '【前端工程化】使用verdaccio搭建公司npm私有库完整流程和踩坑记录'
+[10]: https://www.codenong.com/cs109489923/ '使用钉钉接收gitlab仓库的推送消息'

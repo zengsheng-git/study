@@ -3,11 +3,11 @@ title: codeSpecial
 order: 11
 toc: content
 nav:
-  title: 项目记录
-  order: 6
-group: 
-  title: 项目记录
-  order: 1
+ title: 项目记录
+ order: 6
+group:
+ title: 项目记录
+ order: 1
 ---
 
 # [代码规范 & 详细解释 husky、prettier、eslint、lint-staged 的作用和使用][1]
