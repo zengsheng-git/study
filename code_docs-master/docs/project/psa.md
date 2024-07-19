@@ -1,10 +1,16 @@
-<!--
- * @Author: sheng.zeng 1218128305@qq.com
- * @Date: 2024-04-11 10:24:25
- * @LastEditors: sheng.zeng 1218128305@qq.com
- * @LastEditTime: 2024-07-18 18:53:10
- * @FilePath: \almfirst-psa-frontend\docs\project\code.md
--->
+---
+title: psa
+order: 8
+toc: content
+nav:
+  title: 项目记录
+  order: 7
+group: 
+  title: 项目记录
+  order: 3
+---
+
+
 ## 项目路径
 D:\w\psa\almfirst-psa-frontend
 

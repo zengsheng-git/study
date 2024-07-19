@@ -1,4 +1,14 @@
-
+---
+title: vba
+order: 8
+toc: content
+nav:
+  title: 项目记录
+  order: 7
+group: 
+  title: 项目记录
+  order: 3
+---
 # 项目路径
 
 D:\w\excel-vba
@@ -464,6 +474,5 @@ End Sub
 ```
 
 
-# 图表统计
 
 

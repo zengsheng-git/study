@@ -1,10 +1,14 @@
-<!--
- * @Author: sheng.zeng 1218128305@qq.com
- * @Date: 2024-02-21 16:31:15
- * @LastEditors: sheng.zeng 1218128305@qq.com
- * @LastEditTime: 2024-07-18 18:49:52
- * @FilePath: \LMM-Frontend\project.md
--->
+---
+title: almfirst-lmm-frontend-1.0
+order: 1
+toc: content
+nav:
+  title: 项目记录
+  order: 6
+group: 
+  title: 项目记录
+  order: 3
+---
 
 ## 项目路径
 D:\w\lmm\almfirst-lmm-frontend

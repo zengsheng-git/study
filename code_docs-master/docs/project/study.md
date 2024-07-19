@@ -1,12 +1,12 @@
 ---
 title: study
-order: 11
+order: 1
 toc: content
 nav:
  title: 项目记录
  order: 6
 group:
- title: 项目记录
+ title: 项目指引
  order: 1
 ---
 

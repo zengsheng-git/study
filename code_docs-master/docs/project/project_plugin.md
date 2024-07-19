@@ -1,11 +1,14 @@
-<!--
- * @Author: sheng.zeng 1218128305@qq.com
- * @Date: 2024-04-11 10:24:25
- * @LastEditors: sheng.zeng 1218128305@qq.com
- * @LastEditTime: 2024-07-18 18:42:34
- * @FilePath: \almfirst-psa-frontend\docs\project_plugin.md
--->
-
+---
+title: project_plugin
+order: 8
+toc: content
+nav:
+  title: 项目记录
+  order: 7
+group: 
+  title: 进阶项目
+  order: 2
+---
 ## 命令式上传文件
 
 -   依赖

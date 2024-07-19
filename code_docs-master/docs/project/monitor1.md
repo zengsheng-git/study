@@ -6,8 +6,8 @@ nav:
   title: 项目记录
   order: 6
 group: 
-  title: 项目记录
-  order: 1
+  title: 进阶项目
+  order: 2
 ---
 
 ## 待完成

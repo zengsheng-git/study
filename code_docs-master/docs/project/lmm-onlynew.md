@@ -1,10 +1,14 @@
-<!--
- * @Author: sheng.zeng 1218128305@qq.com
- * @Date: 2024-02-21 16:31:15
- * @LastEditors: sheng.zeng 1218128305@qq.com
- * @LastEditTime: 2024-07-18 18:52:24
- * @FilePath: \LMM-Frontend\project.md
--->
+---
+title: lmm-onlynew
+order: 3
+toc: content
+nav:
+ title: 项目记录
+ order: 6
+group:
+ title: 项目记录
+ order: 1
+---
 ## 项目路径
 D:\w\lmm\lmm-onliy-new\LMM-Frontend
 ## file 上传相同文件没反应， onchnage 不触发，解决办法

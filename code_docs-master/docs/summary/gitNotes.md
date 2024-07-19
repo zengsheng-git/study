@@ -1,10 +1,10 @@
 ---
-title: Git学习
-order: 1
+title: Git
+order: 2
 toc: content
-nav:
-  title: Git使用
-  order: 5
+group: 
+  title: 编程总结
+  order: 2
 ---
 
 # Git学习笔记

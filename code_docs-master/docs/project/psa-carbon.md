@@ -1,11 +1,14 @@
-<!--
- * @Author: sheng.zeng 1218128305@qq.com
- * @Date: 2024-01-22 17:59:43
- * @LastEditors: sheng.zeng 1218128305@qq.com
- * @LastEditTime: 2024-07-18 18:52:48
- * @FilePath: \almfirst-psa\frontend\psa-vite\README.md
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
--->
+---
+title: psa-carbon
+order: 8
+toc: content
+nav:
+  title: 项目记录
+  order: 7
+group: 
+  title: 项目记录
+  order: 3
+---
 ## 项目路径
 D:\w\psa\almfirst-psa\frontend\psa-vite
 

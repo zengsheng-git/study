@@ -1,3 +1,15 @@
+---
+title: monitorData
+order: 6
+toc: content
+nav:
+  title: 项目记录
+  order: 6
+group: 
+  title: 进阶项目
+  order: 2
+---
+
 ## jsError
 
 ```json

@@ -7,7 +7,7 @@ nav:
   order: 7
 group: 
   title: 项目记录
-  order: 1
+  order: 3
 ---
 
 

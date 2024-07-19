@@ -1,3 +1,12 @@
+---
+title: vue2 对比 vue3
+order: 3
+toc: content
+group:
+  title: 前端
+  order: 3
+---
+
 # vue2 和 vue3 区别
 
 ## 1、生命周期函数

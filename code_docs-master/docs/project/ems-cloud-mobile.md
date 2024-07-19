@@ -1,4 +1,16 @@
-项目路径
+---
+title: ems-cloud-mobile
+order: 8
+toc: content
+nav:
+  title: 项目记录
+  order: 7
+group: 
+  title: 项目记录
+  order: 3
+---
+
+# 项目路径
 D:\w\ems\ems-cloud-mobile
 #### 目录 
 
@@ -879,24 +891,23 @@ git push --set-upstream origin dev
 - 使用
 
   ``` js
-  import Echarts, { EChartOption, EchartsHandle, GraphChart } from 'taro-react-echarts'
-  import echarts from '@/utils/taro-react-echarts/echarts.js'
+  // import Echarts, { EChartOption, EchartsHandle, GraphChart } from 'taro-react-echarts'
+  // import echarts from '@/utils/taro-react-echarts/echarts.js'
 
 
-  const echartsRef = useRef<EchartsHandle>(null)
-  const option: EChartOption={}
+  // const echartsRef = useRef<EchartsHandle>(null)
+  // const option: EChartOption={}
     
   ```
 
-  ``` jsx
-    <Echarts
-        echarts={echarts}
-        option={option}
-        ref={echartsRef}
-        // isPage={false}
-        // style自定义设置echarts宽高
-        style={{ widht: '100%', height: '400px' }}
-      />
+  ``` js
+    // <Echarts
+    //     echarts={echarts}
+    //     option={option}
+    //     ref={echartsRef}
+    //     // isPage={false}
+    //     // style自定义设置echarts宽高
+    //   />
   ```
 
 ## &:nth-child(2)
