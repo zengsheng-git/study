@@ -68,29 +68,44 @@ group:
 
 ## 项目合集
 
-- `ems-web`
-- `tauri-antdpro`
-- `ems-cloud`
+- `dumi-study`
 - `ballcat-ui-react-main`
-- `carbon-example/carbon-max`
 - `web_blog`
 - `vue3-egg-test`
-- `dumi-study`
 - `fe-deploy-cli-master`
-- `ems-web-mobile`
 - `uni_ems`
 - `tauri-any-exe`
 - `qiankun`
 - `monitor`
 - `vue-echarts-master`
 - `front-end-data-visualization-master`
-- ~~`grafana-8.2.7`~~
 - `low-code_big-screen`
-- `VRnavigation` ~~小程序二维码~~
-- `cf-seiko-mp` ~~小程序二维码~~
-- `uni-vue3` ~~小程序二维码~~
 - `1.md,ems-web/README.md`
 
+- `安加官网`
+- `layui态势感知`
+- `陈橙设计的态势感知`
+- `威胁情报`
+- `仪综所`
+- `bbs`
+- `孔明灯官网`
+- `猎报`
+- `云waf`
+
+- `ems-web`
+- `ems-cloud`
+- `ems-cloud-mobile`
+- `tauri-antdpro` 黄河可视化大屏
+- `carbon-example/carbon-max`
+- `lmm第一版`
+- `psa`
+
+- `uni-vue3` ~~小程序二维码~~
+- `VRnavigation`
+- `website`
+- `cf-seiko-mp`
+- `pay-nutui`
+- `my-dream`
 ## 文件资料统计
 
 - **w 文件夹**
