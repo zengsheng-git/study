@@ -23,7 +23,7 @@ zs199602.123
 - 会给你一个projectId复制到cypress.config.ts
   `projectId: "9j3d9x"`
 - 下一步会给你一个key，添加到package.json脚本
-  `"cypress:run": "cypress run  --record --key 12ad5e05-d139-46ae-8766-ce3875d54881"`
+  `"cypress:run": "cypress run  --record --key XXXXXXXXXXXXX"`
 - 再运行 `yarn cypress:run` 这时候cloud.cypress 会刷新即可看到新的测试记录在新项目里面
 
 ## 分享给他人测试结果

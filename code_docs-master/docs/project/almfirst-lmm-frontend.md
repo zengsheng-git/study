@@ -14,8 +14,8 @@ group:
 D:\w\lmm\almfirst-lmm-frontend
 
 ## 线上服务器界面用户密码
-jzhang@almfirst.com
-S1tev1ew
+<!-- jzhang@almfirst.com
+S1tev1ew -->
 
 ## 服务器密码
 root

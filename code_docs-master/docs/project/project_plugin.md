@@ -80,7 +80,7 @@ group:
 -   修改 `cypress:run` 命令添加 key
 
 ```json
-"cypress:run": "cypress run  --record --key 7f2d671e-bd8a-4c80-b119-0859a93af5c1",
+"cypress:run": "cypress run  --record --key XXXXXXXXXXXXXXXXXXXXXX",
 ```
 
 ## 提交代码自动格式化

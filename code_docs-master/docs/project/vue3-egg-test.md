@@ -41,7 +41,7 @@ group:
 3.    npm run start
 4.    npm run stop
 #### 使用说明
-管理系统登录密码admin/admin
+<!-- 管理系统登录密码admin/admin -->
 
 
 
