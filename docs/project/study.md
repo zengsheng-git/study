@@ -54,6 +54,10 @@ group:
 - 代码规范 & 详细解释 husky、prettier、eslint、lint-staged 的作用和使用
 - ~~canvas 库 fabricJs,svg~~
 - ~~安装的 vscode 插件集合~~
+- gitee和githup代码自动同步
+- gh-pages部署静态页面, **没有使用githup actions**
+- cypress e2e自动化测试
+- python 部署项目
 
 ---
 

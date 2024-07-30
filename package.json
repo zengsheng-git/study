@@ -1,5 +1,5 @@
 {
-  "name": "code_docs",
+  "name": "studydocs",
   "version": "0.0.1",
   "description": "编程文档",
   "module": "dist/index.js",
@@ -11,6 +11,8 @@
     "build:watch": "father dev",
     "docs:build": "dumi build",
     "deploy_docs": "python deploy_docs.py",
+    "deploy_gitee": "gh-pages -d dist",
+    "deploy": "gh-pages -d dist -r https://github.com/zengsheng-git/study.git -b gh-pages && pnpm run deploy_gitee",
     "prepare": "husky install && dumi setup",
     "doctor": "father doctor",
     "lint": "npm run lint:es && npm run lint:css",

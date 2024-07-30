@@ -887,7 +887,7 @@ git push --set-upstream origin dev
 - 兼容h5和微信小程序
 - `yarn add taro-react-echarts`
 - [在线定制][下载echarts.js]需要的图表类型和工具并下载到`src/utils/taro-react-echarts`目录，**选择不压缩**
-<img src='./下载echarts.js.png' alt='下载echarts.js'>
+<img src='../assets/下载echarts.js.png' alt='下载echarts.js'>
 - 使用
 
   ``` js

@@ -186,7 +186,46 @@ useEffect(() => {
 
 -   [参考项目][univerjs项目示例]
 
+
+## gitee和githup代码同步
+- 修改 gitee项目下面的 .git/config 文件,增加一个githup地址
+  <img src='../assets/QQ20240730-141822.png'/>
+- [参考资料][gitee和githup代码同步]
+
+
+
+## gh-pages 自动把代码同步到 gh-pages分支，并部署静态页面
+- 新建分支 gh-pages
+- 安装插件   `pnpm add gh-pages -d`
+- 根据githup pages 提供的域名，修改打包配置 `base` 和 `publicPath`，一版修改为仓库名
+``` json
+base: "/study", // 文档起始路由
+publicPath: process.env.NODE_ENV === 'production' ? '/study/' : '/' , // 静态资源起始路径
+```
+- 配置package.json命令
+``` json
+// 自动同步到代码gh-pages分支
+"deploy_gitee": "gh-pages -d dist",
+// 自动同步到代码 gitgup 上面的 gh-pages分支
+"deploy": "gh-pages -d dist -r https://github.com/zengsheng-git/study.git -b gh-pages && pnpm run deploy_gitee",
+```
+- [参考资料][githup pages的使用]
+
+
+
+## 宝塔配置 非根目录部署
+- 不需要如下配置,应该删掉,根目录部署需要，防止刷新404
+``` sh
+     location / {
+       try_files $uri /index.html;
+     }
+```
+- 其余配置不变
+- 打包需要配置`base` 和 `publicPath`
+
 ---
 
 [Luckysheet文档]: https://mengshukeji.gitee.io/LuckysheetDocs/zh/guide/config.html#%E9%85%8D%E7%BD%AE%E9%A1%B9
 [univerjs项目示例]: https://univer.ai/playground/?title=Uniscript
+[gitee和githup代码同步]: https://cloud.tencent.com/developer/article/2372244
+[githup pages的使用]: https://blog.csdn.net/weixin_52017993/article/details/133784617
