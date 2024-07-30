@@ -14417,7 +14417,7 @@ from send_dingding_message import send_message
 import os
 import paramiko
 
-def upload_folder_to_remotes(local_folder, remote_paths, hostname='10.0.8.18', port=22, username='root', password='siteview'):
+def upload_folder_to_remotes(local_folder, remote_paths, hostname='******', port=22, username='******', password='******'):
     """
     \u5FAA\u73AF\u4E0A\u4F20\u672C\u5730\u6587\u4EF6\u5939\u53CA\u5176\u5185\u5BB9\u5230\u591A\u4E2A\u8FDC\u7A0B\u670D\u52A1\u5668\u6307\u5B9A\u8DEF\u5F84\u3002
     
@@ -14477,7 +14477,7 @@ upload_folder_to_remotes(local_folder, remote_paths)
 
 upload_to_azure()
 
-send_message('https://oapi.dingtalk.com/robot/send?access_token=4d0e9a9826dcc7be9b369f41a2e2e48078bd0f5bcd715c6b024d8860e818833d')
+send_message('******')
 
 `,paraId:2,tocIndex:1},{value:"\u65B0\u5EFAdeploy_azure.py\u6587\u4EF6",paraId:3,tocIndex:2},{value:`# \u9700\u8981\u5B89\u88C5\u7684\u5E93
 #pip install azure-storage-blob
@@ -14488,7 +14488,7 @@ from mimetypes import guess_type
 
 # Azure Storage Account\u4FE1\u606F
 account_name = "lmmwebapp"
-account_key = "Ovwc/hIumGuup58HyOtPB6Y35BD3LOaCxa+PmTaXlScmHKQjBf+QbSXUCLxQLNt3j7AAX+VrOAgL+ASt5DO6CQ=="
+account_key = "******"
 container_name = "$web"
 
 # \u521D\u59CB\u5316Blob Service Client
@@ -14574,7 +14574,7 @@ def send_message(webhook_url):
     return response.json()
 
 # \u4F7F\u7528\u793A\u4F8B  \u6D4B\u8BD5\u7528\u7684webhook_url
-webhook_url = 'https://oapi.dingtalk.com/robot/send?access_token=c7cda2c563c539322a6709dde3a555d6d20119a83204685aca5ba13a4a924f80'
+webhook_url = '******'
 
 # response = send_message(webhook_url)
 # print(response)
@@ -16506,8 +16506,11 @@ publicPath: process.env.NODE_ENV === 'production' ? '/study/' : '/' , // \u9759\
 `,paraId:33,tocIndex:11},{value:"\u914D\u7F6Epackage.json\u547D\u4EE4",paraId:34,tocIndex:11},{value:`// \u81EA\u52A8\u540C\u6B65\u5230\u4EE3\u7801gh-pages\u5206\u652F
 "deploy_gitee": "gh-pages -d dist",
 // \u81EA\u52A8\u540C\u6B65\u5230\u4EE3\u7801 gitgup \u4E0A\u9762\u7684 gh-pages\u5206\u652F
-"depoly": "gh-pages -d dist -r https://github.com/zengsheng-git/study.git -b gh-pages && pnpm deploy_gitee",
-`,paraId:35,tocIndex:11},{value:"\u53C2\u8003\u8D44\u6599",paraId:36,tocIndex:11}]},92837:function(t,a,e){e.r(a),e.d(a,{texts:function(){return n}});var r=e(22214);const n=[{value:"D:\\w\\psa\\almfirst-psa\\frontend\\psa-vite",paraId:0,tocIndex:0},{value:"This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",paraId:1,tocIndex:1},{value:"Currently, two official plugins are available:",paraId:2,tocIndex:1},{value:"@vitejs/plugin-react",paraId:3,tocIndex:1},{value:" uses ",paraId:3,tocIndex:1},{value:"Babel",paraId:3,tocIndex:1},{value:" for Fast Refresh",paraId:3,tocIndex:1},{value:"@vitejs/plugin-react-swc",paraId:3,tocIndex:1},{value:" uses ",paraId:3,tocIndex:1},{value:"SWC",paraId:3,tocIndex:1},{value:" for Fast Refresh",paraId:3,tocIndex:1},{value:"\u5B89\u88C5\u4F9D\u8D56 ",paraId:4,tocIndex:3},{value:"yarn install",paraId:4,tocIndex:3},{value:`\u5F00\u53D1\u73AF\u5883
+"deploy": "gh-pages -d dist -r https://github.com/zengsheng-git/study.git -b gh-pages && pnpm run deploy_gitee",
+`,paraId:35,tocIndex:11},{value:"\u53C2\u8003\u8D44\u6599",paraId:36,tocIndex:11},{value:"\u4E0D\u9700\u8981\u5982\u4E0B\u914D\u7F6E,\u5E94\u8BE5\u5220\u6389,\u6839\u76EE\u5F55\u90E8\u7F72\u9700\u8981\uFF0C\u9632\u6B62\u5237\u65B0404",paraId:37,tocIndex:12},{value:`     location / {
+       try_files $uri /index.html;
+     }
+`,paraId:38,tocIndex:12},{value:"\u5176\u4F59\u914D\u7F6E\u4E0D\u53D8",paraId:39,tocIndex:12},{value:"\u6253\u5305\u9700\u8981\u914D\u7F6E",paraId:39,tocIndex:12},{value:"base",paraId:39,tocIndex:12},{value:" \u548C ",paraId:39,tocIndex:12},{value:"publicPath",paraId:39,tocIndex:12}]},92837:function(t,a,e){e.r(a),e.d(a,{texts:function(){return n}});var r=e(22214);const n=[{value:"D:\\w\\psa\\almfirst-psa\\frontend\\psa-vite",paraId:0,tocIndex:0},{value:"This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",paraId:1,tocIndex:1},{value:"Currently, two official plugins are available:",paraId:2,tocIndex:1},{value:"@vitejs/plugin-react",paraId:3,tocIndex:1},{value:" uses ",paraId:3,tocIndex:1},{value:"Babel",paraId:3,tocIndex:1},{value:" for Fast Refresh",paraId:3,tocIndex:1},{value:"@vitejs/plugin-react-swc",paraId:3,tocIndex:1},{value:" uses ",paraId:3,tocIndex:1},{value:"SWC",paraId:3,tocIndex:1},{value:" for Fast Refresh",paraId:3,tocIndex:1},{value:"\u5B89\u88C5\u4F9D\u8D56 ",paraId:4,tocIndex:3},{value:"yarn install",paraId:4,tocIndex:3},{value:`\u5F00\u53D1\u73AF\u5883
 `,paraId:4,tocIndex:3},{value:"\u542F\u52A8\u751F\u4EA7\u73AF\u5883api ",paraId:5,tocIndex:3},{value:"yarn start:pro",paraId:5,tocIndex:3},{value:"\u542F\u52A8\u5F00\u53D1\u73AF\u5883api(\u5C39\u54E5) ",paraId:5,tocIndex:3},{value:"yarn start:dev",paraId:5,tocIndex:3},{value:`\u751F\u4EA7\u73AF\u5883\u6253\u5305
 `,paraId:4,tocIndex:3},{value:"\u6253\u5305\u4F7F\u7528\u751F\u4EA7\u73AF\u5883api\uFF08\u4E0D\u548CJava\u4E00\u8D77\u8DD1\uFF09 ",paraId:6,tocIndex:3},{value:"yarn build:pro",paraId:6,tocIndex:3},{value:"\u6253\u5305\u4F7F\u7528\u5F00\u53D1\u73AF\u5883api(\u548CJava\u4E00\u8D77\u8DD1) ",paraId:6,tocIndex:3},{value:"yarn build:dev",paraId:6,tocIndex:3},{value:"git",paraId:4,tocIndex:3},{value:"https://dev.azure.com/dnetlab/Fintech/_git/almfirst-psa",paraId:4,tocIndex:3},{value:`
 zejun.zhang`,paraId:4,tocIndex:3},{value:`
