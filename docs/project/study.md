@@ -51,6 +51,7 @@ group:
 - [前端最能打的本地存储方案][8]
 - [【前端工程化】使用 verdaccio 搭建公司 npm 私有库完整流程和踩坑记录][9]
 - 自定义约定路由配置
+- zustand 全局状态管理
 - 代码规范 & 详细解释 husky、prettier、eslint、lint-staged 的作用和使用
 - ~~canvas 库 fabricJs,svg~~
 - ~~安装的 vscode 插件集合~~
@@ -58,7 +59,20 @@ group:
 - gh-pages部署静态页面, **没有使用githup actions**
 - cypress e2e自动化测试
 - python 部署项目
-
+- 小点子的记录，不管难度，有想法就记录
+> 我可以这么说：
+独立开发 能够让你发财的几率，微乎其微。
+但是如果你的目标只是每天挣个饭钱，那肯定是大有可为。
+- 不刻意就是最大的刻意。
+- 慢慢做，邀功，理解业务，文档PPT，安排人
+- package.json 规范
+- npm install jsdoc -save-dev
+- utools
+- nginx 负载均衡的理解
+- useSWR, react-query, useRequest
+- 编写vscode插件
+- npm 包的部分功能不满足需求，怎么修改其部分功能
+- 切换nodejs版本
 ---
 
 ## 重要而不常用
@@ -110,6 +124,7 @@ group:
 - `cf-seiko-mp`
 - `pay-nutui`
 - `my-dream`
+- `AngelCrypt`
 ## 文件资料统计
 
 - **w 文件夹**
