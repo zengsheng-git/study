@@ -1,4 +1,14 @@
-
+---
+title: jmeter
+order: 8
+toc: content
+nav:
+  title: 项目记录
+  order: 7
+group: 
+  title: 项目记录
+  order: 3
+---
 ## 点击 .jmx文件直接 打开Jemter客户端 
 - 管理员权限打开cmd
 > 输入命令 `Assoc .jmx=jmeter`

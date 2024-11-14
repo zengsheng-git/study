@@ -1,4 +1,14 @@
-
+---
+title: autoMaterAPI
+order: 8
+toc: content
+nav:
+  title: 项目记录
+  order: 7
+group: 
+  title: 项目记录
+  order: 3
+---
 ## 查看断开占用
 - sudo netstat -tuln
 ## 临时使用ll代替ls

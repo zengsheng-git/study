@@ -199,11 +199,11 @@ const scrollToBottom = () => {
 ## 同一个端口下有不同的子目录web服务  lmm upgrades 分支体现 
 代码：添加 base:'/grid-upgrades/',
 nginx配置文件：
-# 根目录下
+- 根目录下
    location / {
       try_files $uri /index.html;
     }
-# /grid-upgrades 目录下
+- /grid-upgrades 目录下
    location /grid-upgrades {
       try_files $uri /grid-upgrades/index.html;
     }
