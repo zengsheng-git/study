@@ -73,6 +73,8 @@ group:
 - 编写vscode插件
 - npm 包的部分功能不满足需求，怎么修改其部分功能
 - 切换nodejs版本
+- postcss-px-to-viewport postcss-pxtorem 响应式自适应
+- 解决vite打包的项目不能直接用浏览器运行HTML文件 https://blog.csdn.net/m0_66687901/article/details/134210761
 ---
 
 ## 重要而不常用
@@ -86,45 +88,59 @@ group:
 
 ## 项目合集
 
-- `dumi-study`
-- `ballcat-ui-react-main`
-- `web_blog`
-- `vue3-egg-test`
-- `fe-deploy-cli-master`
-- `uni_ems`
-- `tauri-any-exe`
-- `qiankun`
-- `monitor`
-- `vue-echarts-master`
-- `front-end-data-visualization-master`
-- `low-code_big-screen`
-- `1.md,ems-web/README.md`
+- dumi-study
+- ballcat-ui-react-main
+- web_blog
+- vue3-egg-test
+- fe-deploy-cli-master
+- uni_ems
+- tauri-any-exe 注意他的两个版本，一个是使用网址，一个是使用打包后的dist
+- qiankun
+- monitor
+- vue-echarts-master
+- front-end-data-visualization-master
+- low-code_big-screen
+- 1.md,ems-web/README.md
 
-- `安加官网`
-- `layui态势感知`
-- `陈橙设计的态势感知`
-- `威胁情报`
-- `仪综所`
-- `bbs`
-- `孔明灯官网`
-- `猎报`
-- `云waf`
+- 安加官网
+- layui态势感知
+- 陈橙设计的态势感知
+- 威胁情报
+- 仪综所
+- bbs
+- 孔明灯官网
+- 猎报
+- 云waf
 
-- `ems-web`
-- `ems-cloud`
-- `ems-cloud-mobile`
-- `tauri-antdpro` 黄河可视化大屏
-- `carbon-example/carbon-max`
-- `lmm第一版`
-- `psa`
+- ems-web
+- ems-cloud
+- ems-cloud-mobile
+- tauri-antdpro 黄河可视化大屏
+- carbon-example/carbon-max
+- lmm第一版
+- lmm-frontend-test
+- dev-lmm , up...-lmm ,
+- psa 全套配置模板
+- vlan-web primevue 模板
+- 3ren `desktop-4.2.0` 在下载文件夹
+- wsqsi-node
+- web-wsqsi tdesign-vue-next 模板
+- web-cdg vue-landing-page-template-main 官网模板
+- tauri-vue tauri模板 和 tdesign-vue-next-starter-develop 模板
+- data-analysis 分析Excel 后端
+--- egg2
+--- venv-py
+- invest 分析Excelweb
+- IRR
 
-- `uni-vue3` ~~小程序二维码~~
-- `VRnavigation`
-- `website`
-- `cf-seiko-mp`
-- `pay-nutui`
-- `my-dream`
-- `AngelCrypt`
+
+- uni-vue3 ~~小程序二维码~~
+- VRnavigation
+- website
+- cf-seiko-mp
+- pay-nutui
+- my-dream
+- AngelCrypt
 ## 文件资料统计
 
 - **w 文件夹**

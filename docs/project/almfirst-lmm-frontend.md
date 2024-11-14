@@ -91,6 +91,8 @@ onBeforeRouteUpdate(async (to, from) => {
 ## vue3 文件上传支持点击/粘贴/拖拽 
 - https://blog.csdn.net/Jie0817/article/details/133312171
 
+## 下载任意流文件,不需要像之前一样传参下载的文件类型
+- https://blog.csdn.net/weixin_53729216/article/details/139582882
 
 ## axios  timeout: 50000,
 - 设置了在5000毫秒内请求数据 如果没有请求成功就执行错误函数
@@ -194,22 +196,25 @@ const scrollToBottom = () => {
 };
 ```
 
+## 同一个端口下有不同的子目录web服务  lmm upgrades 分支体现 
+代码：添加 base:'/grid-upgrades/',
+nginx配置文件：
+# 根目录下
+   location / {
+      try_files $uri /index.html;
+    }
+# /grid-upgrades 目录下
+   location /grid-upgrades {
+      try_files $uri /grid-upgrades/index.html;
+    }
 
-## 待办事项
-- 文件上传请求的统一
-- 3个ID 的统一，和记录
 
 
 
-7dFhJ9GnM3t8WsRpU2x5e0z4c1v6bQaY
-fd8dc99983fe4f5695237e2e3b0418fd
-8dd7d2057a794cebadc7d34390d97b12
+
 
 
 https://almfirst-lmm.greentree-33a1fcd5.centralus.azurecontainerapps.io/lmm/auth/login/ALMFirst/Admin/admin?redirectUrl=https://lmm.dnet.us&token=xxxxxxx
 
 
-渠先生的简历
 
-表格主题
-编辑框在里面

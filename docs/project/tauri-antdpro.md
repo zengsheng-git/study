@@ -203,6 +203,37 @@ D:\w\oem_hhsl\web\bigScreeUI\project.md
    }
 }
 ```
+
+## 直接打包web端的build文件，添加开机动画
+- 把web端的build文件直接丢进dist文件夹
+- tauri.conf.json 去掉"beforeBuildCommand": "yarn build"
+- 添加接口跨域处理:后台需要允许跨域；tauri.conf.json添加
+``` json
+"allowlist": {
+      "all": true, 
+      "http":{
+        "all": true, 
+        "request": true, 
+        "scope":["http://**", "https://**"]
+      }
+    },
+
+  
+```
+- 添加启动窗口页面
+  ``` json 
+   {
+        "title": "3ren",
+        "width": 800,
+        "height": 600,
+        "center": true,
+        "url": "splashscreen.html",
+        "label": "splashscreen",
+        "visible": true
+      }
+  ```
+  - 把public里面的splashscreen.html文件资源丢到dist文件夹
+  
 ## **待处理**
 
 - **eslint**
