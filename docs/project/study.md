@@ -3,11 +3,11 @@ title: study
 order: 1
 toc: content
 nav:
- title: 项目记录
- order: 6
+  title: 项目记录
+  order: 6
 group:
- title: 项目指引
- order: 1
+  title: 项目指引
+  order: 1
 ---
 
 # 学习
@@ -55,26 +55,27 @@ group:
 - 代码规范 & 详细解释 husky、prettier、eslint、lint-staged 的作用和使用
 - ~~canvas 库 fabricJs,svg~~
 - ~~安装的 vscode 插件集合~~
-- gitee和githup代码自动同步
-- gh-pages部署静态页面, **没有使用githup actions**
-- cypress e2e自动化测试
+- gitee 和 githup 代码自动同步
+- gh-pages 部署静态页面, **没有使用 githup actions**
+- cypress e2e 自动化测试
 - python 部署项目
 - 小点子的记录，不管难度，有想法就记录
-> 我可以这么说：
-独立开发 能够让你发财的几率，微乎其微。
-但是如果你的目标只是每天挣个饭钱，那肯定是大有可为。
+  > 我可以这么说：
+  > 独立开发 能够让你发财的几率，微乎其微。
+  > 但是如果你的目标只是每天挣个饭钱，那肯定是大有可为。
 - 不刻意就是最大的刻意。
-- 慢慢做，邀功，理解业务，文档PPT，安排人
+- 慢慢做，邀功，理解业务，文档 PPT，安排人
 - package.json 规范
 - npm install jsdoc -save-dev
 - utools
 - nginx 负载均衡的理解
 - useSWR, react-query, useRequest
-- 编写vscode插件
+- 编写 vscode 插件
 - npm 包的部分功能不满足需求，怎么修改其部分功能
-- 切换nodejs版本
+- 切换 nodejs 版本
 - postcss-px-to-viewport postcss-pxtorem 响应式自适应
-- 解决vite打包的项目不能直接用浏览器运行HTML文件 https://blog.csdn.net/m0_66687901/article/details/134210761
+- 解决 vite 打包的项目不能直接用浏览器运行 HTML 文件 https://blog.csdn.net/m0_66687901/article/details/134210761
+
 ---
 
 ## 重要而不常用
@@ -94,7 +95,7 @@ group:
 - vue3-egg-test
 - fe-deploy-cli-master
 - uni_ems
-- tauri-any-exe 注意他的两个版本，一个是使用网址，一个是使用打包后的dist
+- tauri-any-exe 注意他的两个版本，一个是使用网址，一个是使用打包后的 dist
 - qiankun
 - monitor
 - vue-echarts-master
@@ -103,21 +104,21 @@ group:
 - 1.md,ems-web/README.md
 - ========================
 - 安加官网
-- layui态势感知
+- layui 态势感知
 - 陈橙设计的态势感知
 - 威胁情报
 - 仪综所
 - bbs
 - 孔明灯官网
 - 猎报
-- 云waf
+- 云 waf
 - ========================
 - ems-web
 - ems-cloud
 - ems-cloud-mobile
 - tauri-antdpro 黄河可视化大屏
 - carbon-example/carbon-max
-- lmm第一版
+- lmm 第一版
 - lmm-frontend-test
 - dev-lmm , up...-lmm ,
 - psa 全套配置模板
@@ -126,11 +127,14 @@ group:
 - wsqsi-node
 - web-wsqsi tdesign-vue-next 模板
 - web-cdg vue-landing-page-template-main 官网模板
-- tauri-vue tauri模板 和 tdesign-vue-next-starter-develop 模板
-- data-analysis 分析Excel 后端
---- egg2
---- venv-py
-- invest 分析Excelweb
+- tauri-vue tauri 模板 和 tdesign-vue-next-starter-develop 模板
+- data-analysis 分析 Excel 后端
+  --- egg2
+  --- venv-py
+- FMT 根据 siteview 的基础做的第一版
+- invest（FMT 第二版 tdsign）
+- fmt-web(FMT 第三版 primevue4)
+- grafana-8.2.7
 - IRR
 - ========================
 - uni-vue3 ~~小程序二维码~~
@@ -140,6 +144,7 @@ group:
 - pay-nutui
 - my-dream
 - AngelCrypt
+
 ## 文件资料统计
 
 - **w 文件夹**
